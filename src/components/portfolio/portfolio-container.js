@@ -1,3 +1,4 @@
+  
 import React, { Component } from "react";
 import axios from "axios";
 
@@ -53,10 +54,8 @@ export default class PortfolioContainer extends Component {
     }
 
     return (
-      
-
-        <div className="portfolio-items-wrapper">
-        <button className="btn" amonClick={() => this.handleFilter("eCommerce")}>
+      <div className="portfolio-items-wrapper">
+        <button className="btn" onClick={() => this.handleFilter("eCommerce")}>
           eCommerce
         </button>
         <button className="btn" onClick={() => this.handleFilter("Scheduling")}>
@@ -65,8 +64,9 @@ export default class PortfolioContainer extends Component {
         <button className="btn" onClick={() => this.handleFilter("Enterprise")}>
           Enterprise
         </button>
-       {this.portfolioItems()} </div>
-    
+
+        {this.portfolioItems()}
+      </div>
     );
   }
 }
