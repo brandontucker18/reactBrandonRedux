@@ -296,7 +296,7 @@ export default class PortfolioForm extends Component {
           ) : (
             <DropzoneComponent
               ref={this.logoRef}
-              config={this.componentConfig()}
+              config={this.componentConfig()} 
               djsConfig={this.djsConfig()}
               eventHandlers={this.handleLogoDrop()}
             >
